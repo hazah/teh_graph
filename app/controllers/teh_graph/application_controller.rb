@@ -6,7 +6,7 @@ module TehGraph
     include ActionController::ImplicitRender
     include DeviseTokenAuth::Concerns::SetUserByToken
 
-    self.responder = ApplicationResponder
+    responder = ApplicationResponder
     respond_to :json
 
     before_action :authenticate_user!
