@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency "responders"
   s.add_dependency "decent_exposure"
   s.add_dependency "pundit"
+  s.add_dependency "has_scope"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rails-api", "~> 0.4.0"

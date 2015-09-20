@@ -23,12 +23,8 @@ module TehGraph
       end
     end
 
-    #before_action :authenticate_user!
-    before_action do |controller|
-      controller.instance_eval do
-        authorize(action_name == 'index' ? collection : resource)
-      end
-    end
+    before_action :authenticate_user!
+    before_action :authorize!
     after_action :verify_authorized
     after_action :verify_policy_scoped
 
@@ -56,6 +52,10 @@ module TehGraph
 
     def resource_params
       permitted_attributes resource
+    end
+
+    def authorize!
+      authorize(action_name == 'index' ? collection : resource)
     end
   end
 end
