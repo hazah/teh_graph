@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency "omniauth"
   s.add_dependency "responders"
   s.add_dependency "decent_exposure"
+  s.add_dependency "pundit"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rails-api", "~> 0.4.0"
@@ -31,4 +32,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "devise_token_auth"
   s.add_development_dependency "omniauth"
   s.add_development_dependency "decent_exposure"
+  s.add_development_dependency "pundit"
 end

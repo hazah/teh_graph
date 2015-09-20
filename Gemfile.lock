@@ -6,6 +6,7 @@ PATH
       devise
       devise_token_auth
       omniauth
+      pundit
       rails (~> 4.2.4)
       rails-api (~> 0.4.0)
       responders
@@ -81,6 +82,8 @@ GEM
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
     orm_adapter (0.5.0)
+    pundit (1.0.1)
+      activesupport (>= 3.0.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -136,6 +139,7 @@ DEPENDENCIES
   devise
   devise_token_auth
   omniauth
+  pundit
   rails-api (~> 0.4.0)
   sqlite3
   teh_graph!
